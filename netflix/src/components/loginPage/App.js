@@ -9,7 +9,7 @@ function App() {
 
       const pass = document.querySelector('#password').value;
 
-      if(userId===''&&pass===''){
+      if(userId==='' && pass===''){
 
         document.querySelector('#wrongUser').innerHTML = 'Wpisz adres e-mail, lub numer telefonu';
 
@@ -31,12 +31,33 @@ function App() {
 
         document.querySelector('#wrongPass').innerHTML = '';
 
+      }else{
+
+        document.querySelector('#wrongUser').innerHTML = 'Wpisz adres e-mail, lub numer telefonu';
+
+        document.querySelector('#wrongPass').innerHTML = 'Hasło musi mieć długość od 4 do 60 znaków';
+
+
       }
+      
+    }
+
+    const data = () =>{
+
+      const data = {
+
+        user: "hubert11nowak@gmail.com",
+        pass: "Nowak"
+
+      }
+
+      alert('Dane do logowania : \n\n' + 'E-mail : ' + data.user + '\n' +'Hasło: ' + data.pass);
       
     }
 
 
     return (
+
       <div className='backgroundDiv'>
 
         <h1>Netflix</h1>
@@ -45,7 +66,7 @@ function App() {
 
           <h2>Zaloguj się</h2>
 
-          <input id='user' className='loginInput' type='text' placeholder='E-mail lub numer telefonu'></input>
+          <input onClick={data} id='user' className='loginInput' type='text' placeholder='E-mail lub numer telefonu'></input>
             <p id='wrongUser'></p>
 
           <input id='password' className='loginInput' type='password' placeholder='Hasło'></input>
