@@ -1,0 +1,41 @@
+.footerDiv{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #757575;
+    font-size: 1.5vw;
+    display: flex;
+    height: 20vw;
+}
+
+a{
+    text-decoration: none;
+    color:#757575;
+    font-size: .7em;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.footer-link{
+    margin: auto;
+    margin-top: 5%;
+}
+
+.nr-tel{
+    position: absolute;
+    margin-left: 11vw;
+}
+
+.select-lang{
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 11vw;
+    text-indent: 0;
+    line-height: 1.7;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    padding: 1vw;
+    font-size: 1vw;
+    color: inherit;
+}

@@ -1,0 +1,120 @@
+body{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/87a1d9d8-a21d-4109-ba3a-c10d9055f5cf/77c2d74e-dc10-45b0-80a2-981c8bd3948e/PL-pl-20220307-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;    
+}
+
+.backgroundDiv{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 97vh;
+}
+
+h1{
+    color:red;
+    font-size: 4vw;
+    margin-top: 0;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-size: 2vw;
+    font-family: 'Rubik', sans-serif;
+    margin-left: -20%;
+}
+
+.loginSection{
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: white;
+    width: 30%;
+    height: 75%;
+    margin: auto;
+    display: grid;
+    border-radius: 5px;
+}
+
+h2 + .loginInput{
+    margin-top: 0;
+}
+
+.loginInput{
+    width: 55%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 15px;
+    font-size: 1vw;
+    border-radius: 3px;
+    background-color: #333;
+    color: #757575;
+    border: 1px solid transparent;
+}
+
+.loginInput:focus-visible{
+    outline: none;
+    border-bottom: 1px solid rgb(235, 110, 8);
+}
+
+#wrongUser{
+    font-size: 1vw;
+    color: rgb(235, 110, 8);
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+#wrongPass{
+    font-size: 1vw;
+    color: rgb(235, 110, 8);
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.buttonLogin{
+    width: 62%;
+    margin: auto;
+    background-color: red;
+    color: white;
+    border: 0px solid red;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 1vw;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.buttonLogin:focus{
+    outline: none;
+}
+
+.checkbox{
+    margin-left: 19%;
+    cursor: pointer;
+}
+
+.rememberMe{
+    font-size: 1vw;
+    display: contents;
+}
+
+.check{
+    display: flex;
+}
+
+.question{
+    font-size: 1vw;
+}
+
+.signUp{
+    color: white;
+    font-size: 1vw;
+    font-weight: bold;
+    height: fit-content;
+    width: fit-content;
+    margin: auto
+}
+
+.help{
+    font-size: 1.5vw;
+    cursor: pointer;
+}
