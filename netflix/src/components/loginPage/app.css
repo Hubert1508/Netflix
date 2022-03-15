@@ -52,6 +52,15 @@ h2 + .loginInput{
 .loginInput:focus-visible{
     outline: none;
     border-bottom: 1px solid rgb(235, 110, 8);
+    background-color:rgb(71, 67, 67);
+}
+
+.loginInput:focus::-webkit-input-placeholder {
+    transition: all .3s;
+    top: 1px;
+    position: absolute;
+    font-size: .8vw;
+    z-index: 1;
 }
 
 #wrongUser{
@@ -117,4 +126,38 @@ h2 + .loginInput{
 .help{
     font-size: 1.5vw;
     cursor: pointer;
+}
+
+@media(max-width: 900px){
+
+    .loginSection{
+        height: 65%;
+    }
+
+}
+
+@media(max-width: 760px){
+
+    .loginSection{
+        height: 65%;
+        width: 45%;
+    }
+
+    .loginInput{
+        padding: 10px;
+    }
+
+}
+
+@media(max-width: 500px){
+
+    .loginSection{
+        height: 45%;
+        width: 50%;
+    }
+
+    .loginInput{
+        padding: 10px;
+    }
+
 }

@@ -4,15 +4,32 @@ import './app.css';
 function App() {
 
     const logInFunction = () =>{
+
       const userId = document.querySelector('#user').value;
 
       const pass = document.querySelector('#password').value;
 
       if(userId===''&&pass===''){
 
-        document.querySelector('#wrongUser').innerHTML = "Wpisz adres e-mail, lub numer telefonu";
+        document.querySelector('#wrongUser').innerHTML = 'Wpisz adres e-mail, lub numer telefonu';
 
-        document.querySelector('#wrongPass').innerHTML = 'Hasło musi posiadać od 4 do 60 znaków';
+        document.querySelector('#wrongPass').innerHTML = 'Hasło musi mieć długość od 4 do 60 znaków';
+
+      }else if(pass.length < 4 || pass.length > 60){
+
+        document.querySelector('#wrongPass').innerHTML = 'Hasło musi mieć dlugość od 4 do 60 znaków';
+
+      }else if(userId==='hubert11nowak@gmail.com' && pass==='Nowak'){
+
+        alert("Zalogowano " + userId);
+
+        document.querySelector('#user').value = '';
+
+        document.querySelector('#password').value = '';
+
+        document.querySelector('#wrongUser').innerHTML = '';
+
+        document.querySelector('#wrongPass').innerHTML = '';
 
       }
       
